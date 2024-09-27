@@ -1,0 +1,172 @@
+* {
+  font-family: Roboto, Helvetica, sans-serif;
+  color: #1F2937;
+}
+
+body {
+  background-color: black;
+  ;
+}
+
+.contentWrapper {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  background-color: #1F2937;
+  padding: 20px 150px;
+}
+
+header a,
+hero a,
+footer a {
+  color: #E5E7EB;
+  text-decoration: none;
+}
+
+.primary {
+  color: #F9FAF8 !important;
+}
+
+.secondary {
+  color: #E5E7EB;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  display: flex;
+  gap: 25px;
+  align-items: end;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-right: auto;
+  color: #F9FAF8
+}
+
+hero {
+  display: flex;
+  gap: 50px;
+  background-color: #1F2937;
+  padding: 100px 150px;
+}
+
+.heroMain {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+main {
+  background-color: white;
+}
+
+button {
+  background-color: #3882F6;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+}
+
+button:hover {
+  background-color: #2a61b9;
+}
+
+quote {
+  background-color: #E5E7EB;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 200px;
+}
+
+.imagePlaceholder {
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+#mainImageWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+calltoaction {
+  background-color: #3882F6;
+  border-radius: 10px;
+  padding: 50px 100px;
+  margin: 0px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+calltoaction p {
+  color: #F9FAF8;
+}
+
+calltoaction button {
+  border: solid 2px #F9FAF8;
+  border-radius: 5px;
+  color: #F9FAF8;
+}
+
+.divider {
+  min-height: 50px;
+  background-color: white;
+}
+
+/* recyclebare Styles */
+
+.bordered {
+  border: solid 2px #3882F6;
+}
+
+.verticalFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.justifyEnd {
+  justify-content: end;
+}
+
+.alignEnd {
+  align-items: end;
+}
+
+.alignSelfEnd {
+  align-self: end;
+}
+
+.squareImagePlaceholder {
+  width: 150px;
+  height: 150px;
+}
+
+.equalFlexGrow {
+  flex: 1 1 40%;
+}
+
+main h1 {
+  text-align: center;
+}
+
+p.centered {
+  text-align: center;
+}
+
+.quoteOrigin {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}

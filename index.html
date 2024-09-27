@@ -4,96 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link link="styles.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
   <title>Landing Page</title>
   <style>
-    * {
-      font-family: Roboto, Helvetica, sans-serif;
-      color: #1F2937;
-    }
 
-    .contentWrapper {
-      width: 70%;
-      min-width: 800px;
-      margin: 0 auto;
-    }
-
-    header,
-    hero,
-    footer {
-      background-color: #1F2937;
-      padding: 20px 150px;
-    }
-
-    header a,
-    hero a,
-    footer a {
-      color: #E5E7EB;
-      text-decoration: none;
-    }
-
-    header,
-    hero .primary {
-      color: #F9FAF8 !important;
-    }
-
-    header,
-    hero .secondary {
-      color: #E5E7EB;
-    }
-
-    nav {
-      display: flex;
-      justify-content: end;
-      display: flex;
-      gap: 25px;
-      align-items: end;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bolder;
-      margin-right: auto;
-      color: #F9FAF8
-    }
-
-    hero {
-      display: flex;
-      gap: 20px;
-    }
-
-    .heroMain {
-      font-size: 48px;
-      font-weight: 900;
-      margin-bottom: 0;
-    }
-
-    main {
-      background-color: white;
-    }
-
-    button {
-      
-    }
-
-   
-
-    .quote {
-      background-color: #E5E7EB;
-      font-size: 36px;
-      font-style: italic;
-      font-weight: lighter;
-    }
-
-    .equalFlexGrow {
-      flex: 1 1 40%;
-      m
-    }
-
-    .imagePlaceholder {
-      background-color: lightgrey;
-      border-radius: 10px;
-    }
   </style>
 </head>
 
@@ -101,7 +15,7 @@
   <div class="contentWrapper">
     <header>
       <nav class="secondary">
-        <div class="logo primary"><a href="index.html">Geiler Typ</a></div>
+        <div class="logo"><a href="index.html" class="primary">Grundkurs Webdesign</a></div>
         <div><a href="seite1.html">Leistungen</a></div>
         <div><a href="seite2.html">Referenzen</a></div>
         <div><a href="seite3.html">Impressum</a></div>
@@ -110,20 +24,71 @@
 
     <hero>
       <div class="equalFlexGrow">
-        <p class="heroMain primary">This Website is awesome!</p>
-        <p class="secondary">This website has some subtext that goes her under the main title. It's a smaller font and the color is lower contrast.</p>
-        <button type="button" style="display: block">Sign up</button>
+        <p class="heroMain primary">This website is awesome!</p>
+        <p class="secondary">This website has some subtext that goes her under the main title. It's a smaller font and
+          the color is lower contrast.</p>
+        <button type="button" style="display: block" class="primary">Sign up</button>
       </div>
       <div class="equalFlexGrow primary imagePlaceholder"></div>
     </hero>
 
     <main>
+      <div class="divider"></div>
+      <h1>Some random information</h1>
+      <div id="mainImageWrapper">
+        <div class="verticalFlex justifyEnd" style="width: 150px;">
+          <div class="imagePlaceholder bordered squareImagePlaceholder"></div>
+          <div>
+            <p class="centered">this is some subtext under an illustration or image</p>
+          </div>
+        </div>
+        <div class="verticalFlex justifyEnd" style="width: 150px;">
+          <div class="imagePlaceholder bordered squareImagePlaceholder"></div>
+          <div>
+            <p class="centered">this is some subtext under an illustration or image</p>
+          </div>
+        </div>
+        <div class="verticalFlex justifyEnd" style="width: 150px;">
+          <div class="imagePlaceholder bordered squareImagePlaceholder"></div>
+          <div>
+            <p class="centered">this is some subtext under an illustration or image</p>
+          </div>
+        </div>
+        <div class="verticalFlex justifyEnd" style="width: 150px;">
+          <div class="imagePlaceholder bordered squareImagePlaceholder"></div>
+          <div>
+            <p class="centered">this is some subtext under an illustration or image</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="divider"></div>
+      <quote>
+        <div>
+          <p>This is an inspiring quote, or a testimonial from a costumer. Maybe it's just filling up space, or
+            maybe...
+            screw that. Let's just use Lorem Ipsum to fill the blanks.
+          </p>
+        </div>
+        <div class="alignSelfEnd">
+          <p class="quoteOrigin">-Peter Steele, God of Bass Thunder</p>
+        </div>
+      </quote>
+
+      <div class="divider"></div>
+      <calltoaction>
+        <div>
+          <p style="font-size: 1.5em; font-weight: bold; margin: 0;">Subscribe! Come on!</p>
+          <p style="margin: 0">Sign up for our product by clicking that beautiful button over there!</p>
+        </div>
+        <div style="align-self: center;"><button type="button">Sign up</button></div>
+      </calltoaction>
+      <div class="divider"></div>
     </main>
 
-
     <footer>
-
+      <p class="primary centered">Copyright @Ralf Winkler 2024</p>
+      <p class="secondary centered" style="font-size: 0.7em; color: grey;">...but who cares?</p>
     </footer>
   </div>
 </body>

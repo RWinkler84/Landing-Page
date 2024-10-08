@@ -168,7 +168,7 @@ footer,
 }
 
 .quote {
-  font-size: 36px;
+  font-size: 30px;
   font-style: italic;
   font-weight: light;
   color: var(--darkBlueBackground);
@@ -195,17 +195,48 @@ footer,
   border-radius: 10px;
   padding: 40px 5%;
   gap: 10%;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .callToActionContainer h3 {
   margin: 0;
-  color: var(--lightText); 
+  color: var(--lightText);
 }
 
 .callToActionContainer p {
   margin: 0;
   color: var(--lightText);
+}
+
+#buttonBox {
+  align-self: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .callToActionContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .callToActionContainer button {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .callToActionContainer {
+    width: 70%;
+  }
+  
+  #buttonBox {
+    display: flex;
+    width: 100%
+  }
+
+  #buttonBox button {
+    width: 100%;
+  }
 }
 
 /* footer */
